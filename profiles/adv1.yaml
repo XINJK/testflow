@@ -1,0 +1,51 @@
+# testflow profile: adv1 —— 接口自动化进阶1
+# 由 test-framework-profiler 建档；status: confirmed 之前 test-api-automator 拒绝使用。
+schema_version: "0.1"
+name: adv1
+display_name: 接口自动化进阶1
+status: awaiting-confirm
+created_by: test-framework-profiler
+created_at: 2026-10-06T19:05:00+08:00
+confirmed_by:
+confirmed_at:
+target_repo: C:/Users/XINfree/Desktop/接口自动化进阶1
+external_write: ask
+language: python
+runtime: "Python 3.14.4（环境实测）"
+test_framework: "pytest 9.1.1"
+http_client: "requests 2.34.2"
+templating: "Jinja2 3.1.6"
+extractors: "jsonpath 0.82.2"
+db: "PyMySQL 1.2.0"
+case_data:
+  format: excel
+  path: data/测试用例.xlsx
+  sheet: Sheet1
+  header_row: 2
+  first_data_row: 3
+  execute_flag_column: is_true
+  cell_encoding: python-literal
+asserts:
+  style: keyword-dict
+  check_column: check
+  supported_keys: [status_code, code, str, type, time]
+  soft_assert: "pytest.assume"
+  evidence: "utils/base_assert.py:39-68"
+reporting:
+  tool: "allure-pytest 2.16.0"
+  json_dir: report/json_report
+  html_dir: report/html_report
+runner:
+  primary_command: python run.py
+  fallback_command: python -m pytest
+  test_file: testcases/test_runner.py
+  selection: "is_true 为真值的行"
+  order: "顺序执行；用例间共享全局变量 all，前后依赖敏感"
+cleanup:
+  mechanism: "session 级 autouse fixture"
+  evidence: "conftest.py:8-13"
+  sql_source: "config/config.py:13-16（SQL1-4）"
+base_url_source: "config/config.py:2（硬编码 BASE_URL，无多环境切换）"
+auth: "无统一鉴权封装；token 由用例 headers/json 携带并经 jsonExData 提取"
+captcha: "ddddocr（utils/data_preprocessor.py:8 dddd_ocr_text）"
+conventions_doc: profiles/adv1.conventions.md
