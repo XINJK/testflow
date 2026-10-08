@@ -1,6 +1,6 @@
 # adv1 框架约定（接口自动化进阶1）
 
-每条结论附证据；`file:line` 指目标仓库 `C:/Users/XINfree/Desktop/接口自动化进阶1` 内文件。
+每条结论附证据；`file:line` 指目标仓库（`profiles/adv1.yaml` 的 `target_repo`）内文件。
 
 ## 1. 运行方式
 

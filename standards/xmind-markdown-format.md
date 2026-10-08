@@ -1,4 +1,4 @@
-<!-- 来源：C:/Users/XINfree/Desktop/prd_to_xmind/references/md.md（2026-10-06 复制） -->
+<!-- 来源：prd_to_xmind 项目 references/md.md（2026-10-06 复制） -->
 
 # XMind 导入格式与步骤
 

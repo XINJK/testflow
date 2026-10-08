@@ -1,4 +1,4 @@
-<!-- 来源：C:/Users/XINfree/Desktop/prd_to_xmind/references/standard.md（2026-10-06 复制） -->
+<!-- 来源：prd_to_xmind 项目 references/standard.md（2026-10-06 复制） -->
 
 # 通用软件测试用例设计规范
 

@@ -1,4 +1,4 @@
-<!-- 来源：C:/Users/XINfree/Desktop/prd_to_xmind/references/structure.md（2026-10-06 复制） -->
+<!-- 来源：prd_to_xmind 项目 references/structure.md（2026-10-06 复制） -->
 
 # 测试用例思维导图结构规范
 
