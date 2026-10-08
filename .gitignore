@@ -1,0 +1,27 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- 原始输入（含第三方材料，不公开）----
+artifacts/00-input/*.pdf
+artifacts/00-input/extracted/
+
+# ---- 历史运行产物（基于第三方材料，不公开）----
+artifacts/STATUS.md
+artifacts/10-requirement/
+artifacts/20-review/
+artifacts/30-testpoints/
+artifacts/40-cases-functional/
+artifacts/90-qa/RUN-20261006-*.md
+
+# ---- 本地运行工作区 ----
+workspaces/automation/*
